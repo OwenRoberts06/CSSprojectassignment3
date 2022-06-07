@@ -1,0 +1,94 @@
+/*main heading will stay same size each time*/
+h1 {
+  text-align: center;
+  color: #4b5350;
+  font-weight: 1100;
+  font-size: 38px;
+  position: unset;
+}
+h2 {
+  text-align: center;
+  color: #4b5350;
+  border-right: 50%;
+}
+/*added these to have spacing standard and font*/
+* {
+  line-height: 140%;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.2px;
+}
+
+/* I used some code from W3 schools to make this sidebar but did change the width, left padding, background color  */
+nav {
+  height: 450px;
+  width: 200px;
+  position: inherit;
+  float: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1b221c;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 15px;
+  transform: translateX(-12px) translateY(4px);
+}
+/* transform to skew the links to the other sites and work on hover to make it more interactive */
+nav li:hover {
+  -o-transform: skew(-8deg);
+  -ms-transform: skew(-8deg);
+  -webkit-transform: skew(-8deg);
+  -moz-transform: skew(-8deg);
+  transform: skew(-8deg);
+}
+/*added a bit of space between links on the bottom*/
+li {
+  margin-bottom: 9px;
+}
+/*different color for hyperlink*/
+a {
+  color: #fefef6;
+}
+/*added a border to try it out and changed background*/
+body {
+  background-color: #ebfffd;
+  border-color: #98bf95;
+  border-width: 4px;
+  border-style: groove;
+  /* animation to fade in when you open the sites */
+  -moz-animation: fade-in 0.7s ease-in 0.4s forwards;
+  -webkit-animation: fade-in 0.7s ease-in 0.4s forwards;
+  -o-animation: fade-in 0.7s ease-in 0.4s forwards;
+  -ms-animation: fade-in 0.7s ease-in 0.4s forwards;
+  animation: fade-in 0.7s ease-in 0.4s forwards;
+  position: relative;
+}
+@keyframes fade-in {
+  from {
+    -webkit-transform: translateY(300px);
+    -o-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/*increased font sizes and weights across pages on things like headings and paragraphs to improve readability*/
+p {
+  font-weight: 550;
+  font-size: 18px;
+}
+/*moved this class style here as its going to be standard*/
+.headingFont {
+  font-style: oblique;
+}
+
+section {
+  float: right;
+}
+/*though very muted i used a light blue for the background for trust and calm since its a protfolio and i want to seem trustworthy and calm
+and keeping that as the main color I also added some green for the border t add more color, the rest of the colors are greys and blacks */
